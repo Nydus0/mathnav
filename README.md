@@ -1,2 +1,2 @@
 # mathnav
-Mathematical navigation for aircrafts
+Mathematical equation solver for navigation

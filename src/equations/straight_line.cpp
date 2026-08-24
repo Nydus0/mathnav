@@ -6,25 +6,8 @@
 
 namespace mathnav {
 
-StraightLine::StraightLine(double x0, double y0, double z0,
-                           double vx, double vy, double vz)
-    : x0_(x0),
-      y0_(y0),
-      z0_(z0),
-      vx_(vx),
-      vy_(vy),
-      vz_(vz) {}
+StraightLine::StraightLine(const double a, const double b) : coef_a(a), coef_b(b) {}
 
-double StraightLine::x(double t) const {
-    return x0_ + vx_ * t;
-}
 
-double StraightLine::y(double t) const {
-    return y0_ + vy_ * t;
-}
-
-double StraightLine::z(double t) const {
-    return z0_ + vz_ * t;
-}
 
 }

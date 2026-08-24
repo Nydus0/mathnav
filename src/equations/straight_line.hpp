@@ -4,25 +4,19 @@
 
 #pragma once
 
+#include "src/math/Vector3.hpp"
+
 namespace mathnav {
+
+/** equation y = ax + b **/
 
 class StraightLine {
 public:
-    StraightLine(double x0, double y0, double z0,
-                 double vx, double vy, double vz);
-
-    double x(double t) const;
-    double y(double t) const;
-    double z(double t) const;
+    StraightLine(double a, double b);
 
 private:
-    double x0_;
-    double y0_;
-    double z0_;
-
-    double vx_;
-    double vy_;
-    double vz_;
+    double coef_a;
+    double coef_b;
 };
 
 
